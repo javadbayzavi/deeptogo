@@ -10,13 +10,14 @@ type employee struct {
 }
 
 type contact struct {
-	email   string
-	phone   string
-	address string
+	email       string
+	phone       string
+	address     string
+	Homeaddress string
 }
 
 func structDefinition() {
-	employee1 := employee{1, "Javad", "Bayzavi", contact{"javadbazyavi@gmail.com", "+989173098261", "Jam,Bushehr,IR Iran"}}
+	employee1 := employee{1, "Javad", "Bayzavi", contact{"javadbazyavi@gmail.com", "+989173098261", "Jam,Bushehr,IR Iran", "Tondgouyan"}}
 	fmt.Println(employee1)        //Print all employee info
 	fmt.Println(employee1.family) //access any field of struct
 
@@ -24,4 +25,6 @@ func structDefinition() {
 	fmt.Println((*emp2).name, *emp2) //access to a referenced struct member
 
 	emp2.name = "Mohammad"
+	emp2.contactinfo.Homeaddress = "" //This Capitlized memeber of struct is visible as public memeber
+
 }
