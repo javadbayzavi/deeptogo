@@ -37,14 +37,10 @@ func (this *conceret_entityB) showMyInfo() string {
 	return "This message from conceret entity B"
 }
 
-func createEntity() {
+func tetsAbstractFactory() {
 	var factory = AbstractFactory{}
 	var entity = factory.create_conceret_entity("A")
 	println(entity.showMyInfo())
 	entity = factory.create_conceret_entity("B")
 	println(entity.showMyInfo())
-}
-
-func main() {
-	createEntity()
 }
