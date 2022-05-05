@@ -9,4 +9,7 @@ func main() {
 
 	//Testing Prototype
 	testPrototype()
+
+	//Testing Singletone
+	testSingletone()
 }
