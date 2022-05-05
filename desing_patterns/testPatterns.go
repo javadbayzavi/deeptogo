@@ -2,9 +2,11 @@ package main
 
 func main() {
 	//Test Abstract Factory
-	//tetsAbstractFactory()
+	tetsAbstractFactory()
 
+	//Testing Builder
 	testBuilder()
-	//Test Builder
 
+	//Testing Prototype
+	testPrototype()
 }
