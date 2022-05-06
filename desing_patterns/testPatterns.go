@@ -12,4 +12,7 @@ func main() {
 
 	//Testing Singletone
 	testSingletone()
+
+	//Tesiting StrategyCommand
+	testStrategyCommand()
 }
