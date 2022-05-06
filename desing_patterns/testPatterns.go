@@ -15,4 +15,7 @@ func main() {
 
 	//Tesiting StrategyCommand
 	testStrategyCommand()
+
+	//Testing Command
+	testCommand()
 }
